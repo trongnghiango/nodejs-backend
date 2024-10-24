@@ -1,0 +1,11 @@
+{
+  "compilerOptions": {
+    // "target": "es6",
+    "module": "commonjs",
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["src/*"] // Đảm bảo alias cũng được định nghĩa ở đây
+    }
+  },
+  "exclude": ["node_modules"],
+}
