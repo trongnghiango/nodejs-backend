@@ -3,7 +3,8 @@
 const dotenv = require('dotenv')
 // const assert = require('assert');
 
-dotenv.config()
+dotenv.config({ path: './env/.env' })
+dotenv.config({ path: './env/.env.development' })
 
 const development = require('./development')
 const production = require('./production')

@@ -1,3 +1,5 @@
+const config = require('@/config')
+const logger = require('@/core/logger')
 const { StatusCodes, ReasonPhrases } = require('http-status-codes')
 
 class ApiError extends Error {
@@ -5,6 +7,7 @@ class ApiError extends Error {
     super(message)
     this.statusCode = statusCode
     this.isOperational = isOperational
+    logger.info(`Teee:: ${config.env}`)
     if (stack) {
       this.stack = stack
     } else {

@@ -1,4 +1,7 @@
+const commonConfig = require('./commonConfig')
+
 module.exports = {
+  ...commonConfig,
   port: process.env.PRO_APP_PORT,
   host: process.env.PRO_APP_HOST,
   db: {
